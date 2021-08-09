@@ -1,0 +1,168 @@
+pydev debugger: process 1660 is connecting
+
+Using TensorFlow backend.
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorflow\python\framework\dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorflow\python\framework\dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorflow\python\framework\dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorflow\python\framework\dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorflow\python\framework\dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorflow\python\framework\dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+D:\anaconda3\envs\bert4keras\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Loading data...
+Build model...
+2021-06-19 23:29:02.994083: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2021-06-19 23:29:02.997386: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library nvcuda.dll
+2021-06-19 23:29:03.021575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: GeForce GTX 1660 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.59
+pciBusID: 0000:01:00.0
+2021-06-19 23:29:03.021835: I tensorflow/stream_executor/platform/default/dlopen_checker_stub.cc:25] GPU libraries are statically linked, skip dlopen check.
+2021-06-19 23:29:03.022083: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2021-06-19 23:29:03.399077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-19 23:29:03.399195: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2021-06-19 23:29:03.399297: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2021-06-19 23:29:03.399463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4765 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1660 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Model: "model_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 303)               0         
+_________________________________________________________________
+embedding3 (Embedding)       (None, 303, 300)          26729400  
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 303, 300)          0         
+_________________________________________________________________
+onlstm_1 (ONLSTM)            (None, 303, 300)          723604    
+_________________________________________________________________
+global_max_pooling1d_1 (Glob (None, 300)               0         
+_________________________________________________________________
+documentOut_1 (Dense)        (None, 300)               90300     
+_________________________________________________________________
+dropout2 (Dropout)           (None, 300)               0         
+_________________________________________________________________
+normal1 (BatchNormalization) (None, 300)               1200      
+_________________________________________________________________
+output_1_y3 (Dense)          (None, 219)               65919     
+=================================================================
+Total params: 27,610,423
+Trainable params: 880,423
+Non-trainable params: 26,730,000
+_________________________________________________________________
+Train...
+WARNING:tensorflow:From D:\anaconda3\envs\bert4keras\lib\site-packages\keras\backend\tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+Train on 246802 samples, validate on 27423 samples
+Epoch 1/100
+ - 1224s - loss: 0.5256 - accuracy: 0.8625 - val_loss: 0.1464 - val_accuracy: 0.9551
+
+Epoch 00001: val_accuracy improved from -inf to 0.95511, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 2/100
+ - 1091s - loss: 0.1883 - accuracy: 0.9433 - val_loss: 0.1267 - val_accuracy: 0.9617
+
+Epoch 00002: val_accuracy improved from 0.95511 to 0.96167, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 3/100
+ - 1039s - loss: 0.1629 - accuracy: 0.9503 - val_loss: 0.1211 - val_accuracy: 0.9637
+
+Epoch 00003: val_accuracy improved from 0.96167 to 0.96372, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 4/100
+ - 1028s - loss: 0.1468 - accuracy: 0.9552 - val_loss: 0.1181 - val_accuracy: 0.9654
+
+Epoch 00004: val_accuracy improved from 0.96372 to 0.96536, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 5/100
+ - 1025s - loss: 0.1374 - accuracy: 0.9578 - val_loss: 0.1119 - val_accuracy: 0.9664
+
+Epoch 00005: val_accuracy improved from 0.96536 to 0.96642, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 6/100
+ - 1027s - loss: 0.1306 - accuracy: 0.9600 - val_loss: 0.1085 - val_accuracy: 0.9682
+
+Epoch 00006: val_accuracy improved from 0.96642 to 0.96817, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 7/100
+ - 1029s - loss: 0.1237 - accuracy: 0.9619 - val_loss: 0.1073 - val_accuracy: 0.9683
+
+Epoch 00007: val_accuracy improved from 0.96817 to 0.96831, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 8/100
+ - 1027s - loss: 0.1185 - accuracy: 0.9634 - val_loss: 0.1043 - val_accuracy: 0.9689
+
+Epoch 00008: val_accuracy improved from 0.96831 to 0.96886, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 9/100
+ - 1030s - loss: 0.1148 - accuracy: 0.9644 - val_loss: 0.1026 - val_accuracy: 0.9694
+
+Epoch 00009: val_accuracy improved from 0.96886 to 0.96941, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 10/100
+ - 1027s - loss: 0.1108 - accuracy: 0.9653 - val_loss: 0.1057 - val_accuracy: 0.9687
+
+Epoch 00010: val_accuracy did not improve from 0.96941
+Epoch 11/100
+ - 1026s - loss: 0.1073 - accuracy: 0.9664 - val_loss: 0.1030 - val_accuracy: 0.9695
+
+Epoch 00011: val_accuracy improved from 0.96941 to 0.96948, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 12/100
+ - 1025s - loss: 0.1048 - accuracy: 0.9673 - val_loss: 0.1015 - val_accuracy: 0.9695
+
+Epoch 00012: val_accuracy improved from 0.96948 to 0.96951, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 13/100
+ - 1026s - loss: 0.1019 - accuracy: 0.9683 - val_loss: 0.1031 - val_accuracy: 0.9707
+
+Epoch 00013: val_accuracy improved from 0.96951 to 0.97068, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 14/100
+ - 1024s - loss: 0.1000 - accuracy: 0.9688 - val_loss: 0.1021 - val_accuracy: 0.9709
+
+Epoch 00014: val_accuracy improved from 0.97068 to 0.97086, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 15/100
+ - 1023s - loss: 0.0970 - accuracy: 0.9697 - val_loss: 0.1017 - val_accuracy: 0.9711
+
+Epoch 00015: val_accuracy improved from 0.97086 to 0.97108, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+
+Epoch 00015: ReduceLROnPlateau reducing learning rate to 0.00010000000474974513.
+Epoch 16/100
+ - 1026s - loss: 0.0868 - accuracy: 0.9724 - val_loss: 0.0971 - val_accuracy: 0.9722
+
+Epoch 00016: val_accuracy improved from 0.97108 to 0.97221, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 17/100
+ - 1041s - loss: 0.0839 - accuracy: 0.9730 - val_loss: 0.0964 - val_accuracy: 0.9725
+
+Epoch 00017: val_accuracy improved from 0.97221 to 0.97250, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 18/100
+ - 1029s - loss: 0.0817 - accuracy: 0.9740 - val_loss: 0.0958 - val_accuracy: 0.9728
+
+Epoch 00018: val_accuracy improved from 0.97250 to 0.97283, saving model to ../log/dbp/dbp_l3_weights_with_true.hdf5
+Epoch 19/100
+ - 1030s - loss: 0.0811 - accuracy: 0.9741 - val_loss: 0.0955 - val_accuracy: 0.9726
+
+Epoch 00019: val_accuracy did not improve from 0.97283
+Epoch 20/100
+ - 1033s - loss: 0.0792 - accuracy: 0.9750 - val_loss: 0.0955 - val_accuracy: 0.9728
+
+Epoch 00020: val_accuracy did not improve from 0.97283
+Epoch 21/100
+ - 1035s - loss: 0.0786 - accuracy: 0.9749 - val_loss: 0.0948 - val_accuracy: 0.9728
+
+Epoch 00021: val_accuracy did not improve from 0.97283
+Epoch 22/100
+ - 1033s - loss: 0.0776 - accuracy: 0.9750 - val_loss: 0.0949 - val_accuracy: 0.9727
+
+Epoch 00022: val_accuracy did not improve from 0.97283
+Epoch 23/100
+ - 1039s - loss: 0.0762 - accuracy: 0.9754 - val_loss: 0.0946 - val_accuracy: 0.9727
+
+Epoch 00023: val_accuracy did not improve from 0.97283
+Epoch 00023: early stopping
+
+test loss 0.09433854192876653 accuracy 0.9729713797569275
+level3: end up
